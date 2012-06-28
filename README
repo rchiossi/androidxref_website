@@ -1,0 +1,6 @@
+AndroidXRef Homepage source code
+
+This is the source code for androidxref.com homepage.
+It was developed using nanoc - http://nanoc.stoneship.org/
+
+For local testing, run "nanoc view" in the home folder and check http://localhost:3000
