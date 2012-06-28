@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AndroidXref - <%= @item[:title] %></title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>"> 
+  </head>
+  <body>
+    <div id="header">
+      <a href="/"><img src="/images/beta.png"/></a>
+    </div>
+    <div id="split"></div>
+    <div id="index_box"></div>
+    <div id="main">
+      <%= yield %>
+    </div>
+    <div id="sidebar_left">
+      <h2>Cross-Reference</h2>
+      <ul>
+        <li><strike>JellyBean - 4.1.0</strike></li>
+        <li><a href="http://androidxref.com/4.0.4/">ICS - 4.0.4</a></li>
+        <li><a href="http://androidxref.com/2.3.6/">Gingerbread - 2.3.6</a></li>
+      </ul>
+      <ul>
+	<img src="/images/logo.png"/>
+      </ul>
+    </div>
+
+    <div id="sidebar_right">
+      <h2>Information</h2>
+      <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/news/">News</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>      
+      <h2>Knowledge Share</h2>
+      <ul>
+        <li><strike>Local Setup</strike></li>
+        <li><strike>Download VM</strike></li>
+      </ul>      
+      <h2>Related Websites</h2>
+      <ul>
+        <li><a href="http://lxr.linux.no/">LXR</a></li>
+        <li><a href="http://stackoverflow.com/questions/tagged/android">StackOverflow</a></li>
+      </ul>      
+      <h2>Software</h2>
+      <ul>
+        <li><a href="http://hub.opensolaris.org/bin/view/Project+opengrok/">OpenGrok</a></li>
+        <li><a href="http://nanoc.stoneship.org/">nanoc</a></li>
+      </ul>
+    </div>
+
+
+  </body>
+</html>
