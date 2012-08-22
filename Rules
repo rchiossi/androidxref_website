@@ -28,6 +28,11 @@ compile '/news/' do
   layout 'default'
 end
 
+compile '/about/' do
+  filter :kramdown
+  layout 'default'
+end
+
 compile '/contact/' do
   filter :kramdown
   layout 'default'
